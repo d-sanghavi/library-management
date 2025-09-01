@@ -1,73 +1,85 @@
-# Welcome to your Lovable project
+# 📚 Readr Connect
 
-## Project info
+A modern web application built with **Vite**, **React**, and **TailwindCSS**.  
+This project is designed for fast development, clean UI, and scalable architecture.
 
-**URL**: https://lovable.dev/projects/1e596158-d799-4b38-987f-7881a425851a
+---
 
-## How can I edit this code?
+## 🚀 Features
+- ⚡️ Blazing fast build with **Vite**
+- 🎨 Styled with **TailwindCSS**
+- 🛠 Configurable with ESLint & PostCSS
+- 📦 Package management with npm / bun
+- 📂 Organized source structure (`src`, `components`, `public`)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 📁 Project Structure
+library management/
+│── public/ # Static assets
+│── src/ # Source code (React components, pages, etc.)
+│── components/ # Reusable UI components
+│── package.json # Project metadata & dependencies
+│── vite.config.ts # Vite configuration
+│── tailwind.config.ts # Tailwind configuration
+│── postcss.config.js # PostCSS configuration
+│── tsconfig.json # TypeScript configuration
+│── README.md # Project documentation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1e596158-d799-4b38-987f-7881a425851a) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠 Installation & Setup
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Clone the repository:
+```bash
+git clone https://github.com/your-username/readr-connect-main.git
+cd readr-connect-main
+```
+```bash
+npm install
+```
+(or use bun install if you prefer Bun)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Run the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Build for production:
+```bash
+npm run build
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+Preview production build:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run preview
+```
 
-## What technologies are used for this project?
+📦 Dependencies
 
-This project is built with:
+React
+ – UI library
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Vite
+ – Build tool
 
-## How can I deploy this project?
+TailwindCSS
+ – Utility-first CSS framework
 
-Simply open [Lovable](https://lovable.dev/projects/1e596158-d799-4b38-987f-7881a425851a) and click on Share -> Publish.
+ESLint
+ – Code linting
 
-## Can I connect a custom domain to my Lovable project?
+PostCSS
+ – CSS processing
 
-Yes, you can!
+🤝 Contributing
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Contributions, issues, and feature requests are welcome!
+Feel free to fork the repo and submit a PR.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+📄 License
+
+This project is licensed under the MIT License.
