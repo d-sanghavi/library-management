@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Library Management System Design System */
+
+@layer base {
+  :root {
+    /* Library themed color palette */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    /* Deep library blue as primary */
+    --primary: 215 84% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 215 60% 45%;
+    --primary-dark: 215 90% 20%;
+
+    /* Warm amber accents */
+    --secondary: 35 100% 50%;
+    --secondary-foreground: 215 25% 27%;
+    --secondary-light: 35 80% 60%;
+
+    /* Elegant neutrals */
+    --muted: 215 15% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 35 25% 92%;
+    --accent-foreground: 215 25% 27%;
+
+    /* Book-themed colors */
+    --book-spine: 25 45% 35%;
+    --book-page: 45 25% 95%;
+    --library-wood: 30 35% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 15% 90%;
+    --input: 215 15% 95%;
+    --ring: 215 84% 25%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark)), hsl(var(--primary)));
+    --gradient-book: linear-gradient(180deg, hsl(var(--book-page)), hsl(var(--muted)));
+
+    /* Shadows */
+    --shadow-book: 0 4px 12px -2px hsl(var(--primary) / 0.1), 0 2px 8px -2px hsl(var(--primary) / 0.06);
+    --shadow-card: 0 1px 3px 0 hsl(var(--primary) / 0.1), 0 1px 2px 0 hsl(var(--primary) / 0.06);
+    --shadow-elevated: 0 10px 25px -3px hsl(var(--primary) / 0.15), 0 4px 6px -2px hsl(var(--primary) / 0.08);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme for library system */
+    --background: 215 25% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 215 25% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 215 25% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 35 80% 60%;
+    --primary-foreground: 215 25% 8%;
+    --primary-light: 35 70% 70%;
+    --primary-dark: 35 90% 50%;
+
+    --secondary: 215 60% 45%;
+    --secondary-foreground: 0 0% 95%;
+    --secondary-light: 215 50% 55%;
+
+    --muted: 215 20% 15%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 215 20% 18%;
+    --accent-foreground: 0 0% 95%;
+
+    --book-spine: 25 45% 45%;
+    --book-page: 45 25% 85%;
+    --library-wood: 30 35% 50%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 215 20% 20%;
+    --input: 215 20% 15%;
+    --ring: 35 80% 60%;
+
+    /* Dark theme gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark)), hsl(var(--primary)));
+    --gradient-book: linear-gradient(180deg, hsl(var(--book-page)), hsl(var(--muted)));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-book {
+    background: var(--gradient-book);
+  }
+  
+  .shadow-book {
+    box-shadow: var(--shadow-book);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
