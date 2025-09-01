@@ -1,4 +1,4 @@
-# 📚 Readr Connect
+# 📚 Library Management
 
 A modern web application built with **Vite**, **React**, and **TailwindCSS**.  
 This project is designed for fast development, clean UI, and scalable architecture.
